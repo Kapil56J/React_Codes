@@ -1,25 +1,27 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Dimensions, StyleSheet, Text } from "react-native";
+import AutometicCarouselScreen from "./CarouselScreens/AutometicCarouselScreen.tsx";
+import DotedCarouselScreen from "./CarouselScreens/DotedCarouselScreen.tsx";
+
+const { width } = Dimensions.get("window");
 
 const CarouselScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Carousel Screen</Text>
-    </View>
+      <View style={styles.container}>
+      <AutometicCarouselScreen />
+        <DotedCarouselScreen />
+      </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  text: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
+    padding: 2,
+    width,
+    height: 'auto',
+    justifyContent: "center",
+    alignItems: "center",
+  }
 });
 
-export default CarouselScreen; 
+export default CarouselScreen;
