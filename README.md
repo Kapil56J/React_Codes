@@ -2,7 +2,7 @@ Overview and Key Topics for Interview Preparation.
 
 React:
 ```sh
-Imagecarousel
+ImageCarousel
 InfiniteScroll
 Form
 TodoList(CRUD)
