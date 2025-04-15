@@ -1,4 +1,4 @@
-Things to learn and Overview for Interview Preparation.
+Overview and Key Topics for Interview Preparation.
 
 React:
 ```sh
